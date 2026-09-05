@@ -1,0 +1,24 @@
+﻿@model ToolRequest
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+       <form asp-action="GetBalance" method="Post">
+          <div>
+              <label> Prompt </label>
+              <div>
+                  <textarea asp-for="Prompt"></textarea>
+              </div>
+          </div>
+          <div>
+              <input type="submit" />
+          </div>
+       </form>
+    </body>
+@if (ViewBag.Answer!=null)
+{
+    <h3>@ViewBag.Answer</h3>
+}
+    </html>
